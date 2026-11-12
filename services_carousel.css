@@ -1,0 +1,685 @@
+
+/* くらしのサービス用カルーセル */
+.karte_kcx_home_services_root_SCOPO {
+    --min-scale-size-pc: .8;
+    --min-scale-size-sp: 1;
+    --indicator-active-color: #E72221;
+    background-color: #FFF6D5
+}
+.karte_kcx_home_services_root_SCOPO {
+    height: 25vw;
+    overflow: hidden;
+    position: relative
+}
+.karte_kcx_home_services_slider_SCOPO {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    overflow: visible
+}
+.slider__Group_SCOPO {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80%;
+    overflow-x: clip;
+    overflow-y: visible
+}
+.karte_kcx_home_services_slider__Thumb_SCOPO {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center
+}
+.karte_kcx_home_services_slider__LeftContent_SCOPO {
+    width: 100%;
+    flex-shrink: 0
+}
+.slider__Date_SCOPO {
+    margin: 0;
+    font-weight: 600;
+    font-size: .8vw;
+    color: #00100e52;
+    text-align: left;
+    margin: 0 0 .4vw
+}
+.karte_kcx_home_services_slider__Title_SCOPO {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 160%;
+    letter-spacing: .02em;
+    font-feature-settings: "pcap" on, "halt" on;
+    color: #00100e;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-align: left
+}
+.slider__Tags_SCOPO {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: .6vw 0 0;
+    font-weight: 500;
+    font-size: .8vw;
+    line-height: 2;
+    color: #00100e8f
+}
+.slider__Tag_SCOPO {
+    margin-right: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden
+}
+.karte_kcx_home_services_slider__Item_SCOPO {
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #fff;
+    left: 150%;
+    z-index: 1;
+    text-decoration: none!important;
+    border: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px
+}
+.karte_kcx_home_services_slider__Item_SCOPO:hover {
+    box-shadow: 0 4px 10px -2px #00100e14, 0 4px 20px 8px #00100e08
+}
+.karte_kcx_home_services_slider__Item_SCOPO:focus {
+    outline: 2px solid #fff;
+    outline-offset: -2px
+}
+.karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+    opacity: 1;
+    left: 0;
+    z-index: 1;
+    transform: translate(-100%) scale(var(--min-scale-size-pc))
+}
+.karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+    opacity: 1;
+    left: 0;
+    z-index: 2;
+    transform: translate(-50%) scale(var(--min-scale-size-pc))
+}
+.karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+    opacity: 1;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%) scale(1)
+}
+.karte_kcx_home_services_slider__Item_SCOPO:nth-child(4) {
+    opacity: 1;
+    left: 100%;
+    z-index: 2;
+    transform: translate(-50%) scale(var(--min-scale-size-pc))
+}
+.karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderDouble_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO {
+    display: flex
+}
+.karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderDouble_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+    opacity: 1;
+    left: 28.5%;
+    z-index: 4;
+    transform: translate(-50%) scale(1)
+}
+
+
+.karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderDouble_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+    opacity: 1;
+    display: flex;
+    left: 71.5%;
+    z-index: 4;
+    transform: translate(-50%) scale(1)
+}
+.sliderSimple_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO {
+    display: none
+}
+.sliderSimple_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+    display: flex
+}
+.karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderSingle_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+    transform: none
+}
+.sliderSingle_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO {
+    transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+}
+.sliderLoaded_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO {
+    transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+}
+.karte_kcx_home_services_slider__Btn_SCOPO {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    z-index: 4;
+    transition: background-color .3s ease;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    color: #EB1E1E;
+    box-shadow: 0 8px 18px -2px #00100e14, 0 8px 36px 16px #00100e08;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.slider__prev_SCOPO {
+    left: 19%;
+    transform: translateX(-18px)
+}
+.karte_kcx_home_services_slider__next_SCOPO {
+    right: 19%;
+    transform: translateX(18px)
+}
+.karte_kcx_home_services_slider__Btn_SCOPO:hover {
+    background-color: #f7f8f8
+}
+.karte_kcx_home_services_slider__Btn_SCOPO svg {
+    height: 16px;
+    overflow: visible;
+    vertical-align: -3px
+}
+.karte_kcx_home_services_slider__IndicatorGroup_SCOPO {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 1px
+}
+.karte_kcx_home_services_slider__Indicator_SCOPO {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 16, 14, .12);
+    border-radius: 40px
+}
+.karte_kcx_home_services_slider__Indicator_SCOPO.indicatorCurrent_SERVICES_JS {
+    background: var(--indicator-active-color)
+}
+@media screen and (max-width: 1080px) {
+    .karte_kcx_home_services_root_SCOPO {
+        height: 35vw
+    }
+    .slider__prev_SCOPO {
+        left: 5%
+    }
+    .karte_kcx_home_services_slider__next_SCOPO {
+        right: 5%
+    }
+    .slider__Date_SCOPO {
+        font-size: 1.3vw;
+        margin: 0 0 1vw
+    }
+    .karte_kcx_home_services_slider__Title_SCOPO {
+        font-size: 2vw;
+        -webkit-line-clamp: 2
+    }
+    .slider__Tag_SCOPO {
+        font-size: 1.3vw;
+        -webkit-line-clamp: 2
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO {
+        width: 80%;
+        transform: translate(-50%) scale(var(--min-scale-size-pc))
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+        transform: translate(-100%) scale(var(--min-scale-size-pc))
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+        left: 0;
+        transform: translate(-80%) scale(var(--min-scale-size-pc))
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+        left: 50%;
+        transform: translate(-50%) scale(1)
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(4) {
+        left: 100%;
+        transform: translate(-20%) scale(var(--min-scale-size-pc))
+    }
+}
+@media screen and (max-width: 720px) {
+    .karte_kcx_home_services_root_SCOPO {
+        height: 42vw
+    }
+
+    .slider__Group_SCOPO {
+        top: 0;
+        height: 76%;
+        transform: none
+    }
+    .karte_kcx_home_services_slider__LeftContent_SCOPO {
+        width: 100%
+    }
+    .slider__Date_SCOPO {
+        font-size: 1.7vw
+    }
+    .karte_kcx_home_services_slider__Title_SCOPO {
+        font-size: 3.4vw
+    }
+    .slider__Tag_SCOPO {
+        font-size: 1.7vw
+    }
+    .karte_kcx_home_services_slider__Btn_SCOPO {
+        width: 38px;
+        height: 38px
+    }
+    .karte_kcx_home_services_slider__Btn_SCOPO svg {
+        height: 12px
+    }
+    .slider__prev_SCOPO,
+    .karte_kcx_home_services_slider__next_SCOPO {
+        display: none
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO {
+        display: grid;
+        width: 40%
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:hover {
+        box-shadow: none
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+        left: -14.5%;
+        z-index: 1;
+        transform: translate(-50%)
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+        left: 28.5%;
+        z-index: 3;
+        transform: translate(-50%)
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+        left: 71.5%;
+        z-index: 4;
+        transform: translate(-50%)
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(4) {
+        left: 114.5%;
+        z-index: 2;
+        transform: translate(-50%)
+    }
+    .slider__Tag_SCOPO {
+        margin-right: 0
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderDouble_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+        display: flex
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO.sliderSimple_SERVICES_JS .karte_kcx_home_services_slider__Item_SCOPO {
+        transition: left 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+    }
+}
+
+.karte_kcx_home_services_root_SCOPO {
+    --min-scale-size-pc: 1;
+    height: 42vw;
+    overflow: visible;
+    position: relative;
+    z-index: 0;
+}
+.slider__Group_SCOPO {
+    top: 0;
+    height: 76%;
+    transform: none;
+}
+.karte_kcx_home_services_slider__LeftContent_SCOPO {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 721px) {
+    .karte_kcx_home_services_root_SCOPO {
+        height: 25vw;
+    }
+    .slider__Group_SCOPO {
+        height: 80%;
+        transform: translateY(-50%);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO {
+        display: flex;
+        width: 16.7%;
+        transform: translate(-50%) scale(1);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+        left: 14.5%;
+        transform: translate(-50%) scale(1);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+        left: 32.25%;
+        transform: translate(-50%) scale(1);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+        left: 50%;
+        transform: translate(-50%) scale(1);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(4) {
+        left: 67.75%;
+        transform: translate(-50%) scale(1);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(5) {
+        left: 85.5%;
+        transform: translate(-50%) scale(1);
+    }
+    .slider__prev_SCOPO {
+        left: .6%;
+    }
+    .karte_kcx_home_services_slider__next_SCOPO {
+        right: .6%;
+    }
+    .karte_kcx_home_services_slider__Thumb_SCOPO {
+        width: 70%;
+        height: 78%;
+        flex: 0 0 78%;
+        align-self: center;
+    }
+}
+
+.karte_kcx_home_services_slider__LeftContent_SCOPO {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.karte_kcx_home_services_slider__Thumb_SCOPO {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    flex: 1;
+    object-fit: contain;
+}
+.karte_kcx_home_services_slider__Title_SCOPO {
+    flex: 0 0 auto;
+    margin: 0 0 .8vw;
+    font-size: 1.4vw;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+}
+@media screen and (max-width: 720px) {
+    .karte_kcx_home_services_slider__Title_SCOPO {
+        font-size: 2.4vw;
+        margin-bottom: 1.2vw;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    .karte_kcx_home_services_slider__Thumb_SCOPO {
+        width: 70%;
+        height: 78%;
+        flex: 0 0 78%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .karte_kcx_home_services_slider__Thumb_SCOPO {
+        width: 90%;
+        height: 78%;
+        align-self: center;
+    }
+}
+
+.karte_kcx_home_services_slider__ImageBox_SCOPO {
+    overflow: hidden;
+}
+
+
+.outline_button {
+    height: 60px;
+    width: 338px;
+    margin: 20px auto 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 26px;
+    background: #fff;
+    border: 0;
+    border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.outline_button .outline_button_arrow {
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #d9483b;
+    border-right: 3px solid #d9483b;
+    box-sizing: border-box;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+@media screen and (max-width: 720px) {
+    .outline_button {
+        width: 100%;
+    }
+}
+
+.karte_kcx_home_services_root_SCOPO > .outline_button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 20px 0 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.karte_kcx_home_services_slider__PauseBtn_SCOPO {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 8px 18px -2px #00100e14, 0 8px 36px 16px #00100e08;
+}
+
+.karte_kcx_home_services_slider__PauseBtn_SCOPO svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.karte_kcx_home_services_slider__ControlsRow_SCOPO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.karte_kcx_home_services_slider__IndicatorGroup_SCOPO {
+    position: static;
+    margin: 0;
+}
+.karte_kcx_home_services_slider__Indicator_SCOPO + .karte_kcx_home_services_slider__Indicator_SCOPO {
+    margin-left: 10px;
+}
+
+
+.karte_kcx_home_services_slider__ControlsRow_SCOPO > * + * {
+    margin-left: 20px;
+}
+.karte_kcx_home_services_slider__Indicator_SCOPO {
+    width: 11px;
+    height: 11px;
+    background: #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .18);
+}
+
+@media screen and (min-width: 721px) {
+    .karte_kcx_home_services_root_SCOPO {
+        height: 247px;
+    }
+    .karte_kcx_home_services_slider_SCOPO {
+        height: 247px;
+    }
+    .slider__Group_SCOPO {
+        height: 203px;
+        top: 0;
+        transform: none;
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO {
+        width: 16.8%;
+        height: 203px;
+        background: #fff;
+        border: 0;
+        border-radius: 12px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, .06);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:hover {
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, .06);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(1) {
+        left: 13.4%;
+        transform: translate(-50%);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(2) {
+        left: 31.7%;
+        transform: translate(-50%);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(3) {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(4) {
+        left: 68.3%;
+        transform: translate(-50%);
+    }
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:nth-child(5) {
+        left: 86.6%;
+        transform: translate(-50%);
+    }
+
+
+    .karte_kcx_home_services_slider__LeftContent_SCOPO {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 8px 8px 18px;
+        justify-content: flex-start;
+    }
+    .karte_kcx_home_services_slider__ImageBox_SCOPO {
+        width: 100%;
+        height: 135px;
+        flex: 0 0 135px;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .karte_kcx_home_services_slider__Thumb_SCOPO {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex: none;
+        align-self: auto;
+    }
+    .karte_kcx_home_services_slider__Title_SCOPO {
+        margin: 0;
+        padding-top: 8px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #333;
+        white-space: normal;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    .karte_kcx_home_services_root_SCOPO {
+        width: 1100px;
+        max-width: calc(100vw - 48px);
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .karte_kcx_home_services_slider__LeftContent_SCOPO {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 8px 6px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .karte_kcx_home_services_slider__ImageBox_SCOPO {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1;
+        min-height: 0;
+    }
+    .karte_kcx_home_services_slider__Thumb_SCOPO {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        flex: none;
+        align-self: auto;
+    }
+    .karte_kcx_home_services_slider__Title_SCOPO {
+        flex: 0 0 auto;
+        margin: 8px 0 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #333;
+        text-align: center;
+        white-space: normal;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO,
+    .karte_kcx_home_services_slider_SCOPO .slider__Group_SCOPO .karte_kcx_home_services_slider__Item_SCOPO:hover {
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, .06);
+    }
+}
